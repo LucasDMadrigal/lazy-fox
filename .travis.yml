@@ -21,7 +21,7 @@ deploy:
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: /_dist_
-  target-branch: main
+  target-branch: gh-pages
   commit-message: "deploy"
   on:
     branch: main
