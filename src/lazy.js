@@ -5,15 +5,13 @@ const isIntersecting = (entry) => {
 const loadImage = entry => {
     const figure = entry.target;
 
-    console.log('holis');
+    console.log('img pedida');
 
     const image = figure.firstChild;
     const url = image.dataset.src;
 
     image.src = url;
     observer.unobserve(figure)
-    // image.src = `${baseURL}${id}.jpg`;
-    //
 }
 
 

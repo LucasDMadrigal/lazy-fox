@@ -1,4 +1,4 @@
-import { registerImage } from './lazy'
+import { registerImage } from './lazy.js'
 
 const baseURL = 'https://randomfox.ca/images/';
 
@@ -11,12 +11,11 @@ const createImageNode = (id) => {
 
     //creacion del contenedor de imagenes
     const figure = document.createElement('figure');
-    figure.className = "p-20";
+    figure.classList.add('fox_image--container')
 
 
     const image = document.createElement('img');
-    image.className = "mx-auto";
-    image.width = "320"
+    image.classList.add('fox_image')
     image.dataset.src = `${baseURL}${id}.jpg`;
 
     figure.append(image)
