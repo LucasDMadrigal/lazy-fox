@@ -1,6 +1,7 @@
-import { registerImage } from './lazy.js'
+import { registerImage } from './lazy.js';
+import './index.css';
 
-const baseURL = 'https://randomfox.ca/images/';
+const baseURL = process.env.API
 
 const appNode = document.getElementById('app')
 const main = document.createElement('main')
